@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 700px;
+    height: 500px;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+p {
+    width: 700px;
+    height: 500px;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+main div {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: blue;
+}
+
+
+.barba-once {
+    transform: scale(0);
+}
+
+.barba-once-active {
+    transition: transform 1s ease-in-out;
+}
+
+.barba-once-to {
+    transform: scale(1);
+}
+
+
+
+.barba-leave {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.barba-leave-active {
+    transition: all 0.8s ease;
+}
+
+.barba-leave-to {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.barba-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.barba-enter-active {
+    transition: all 0.8s ease;
+}
+
+.barba-enter-to {
+    opacity: 1;
+    transform: translateX(0%);
+}
